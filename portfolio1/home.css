@@ -5,13 +5,13 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100;
+    font-family: DejaVu Sans Mono, monospace;
 }
 
 .left{
     display: flex;
     justify-content:center;
     align-items:center;
-    border: 2px solid blue;
     grid-column-end: 2;
 }
 ul{
@@ -20,7 +20,6 @@ ul{
 }
 .right
 {
-    border: 2px solid red;
     grid-column-end: 3;
 }
 
