@@ -31,3 +31,8 @@ body::before {
     opacity: 0.25;
 }
 
+body
+{
+    overflow:hidden;
+}
+
