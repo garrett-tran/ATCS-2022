@@ -34,16 +34,11 @@ ul
     display: flex;
     justify-content: center;
     
-    height: 105vh;
+    height: 100vh;
     
 }
 
-li::marker
-{
-    content: ">";
-    font-style: bold;
-    color: red;
-}
+
 
 body
 {
