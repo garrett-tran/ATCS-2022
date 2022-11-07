@@ -5,12 +5,13 @@
     align-items:center;
     height: 80vh;
     color: black;
-    font-family: DejaVu Sans Mono, monospace;
     position: absolute;
     top: 15vh;
     right: 20vh;
 
 }
+
+
 
 .fact
 {
@@ -23,7 +24,6 @@
 
 h1,p
 {
-    font-family: DejaVu Sans Mono, monospace;
     color: black;
 }
 

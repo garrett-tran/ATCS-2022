@@ -1,16 +1,18 @@
 .main
 {
-    display: flex;
-    height: 80vh;
+    display:flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: DejaVu Sans Mono, monospace;
 }
-h1
+.instagram
 {
-    font-family: DejaVu Sans Mono, monospace;
+    background-color:#bc2a8d;
 }
+.twitter
+{
+    background-color:#1DA1F2;
+}
+
 
 body
 {

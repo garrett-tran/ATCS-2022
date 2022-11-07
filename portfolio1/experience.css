@@ -2,13 +2,20 @@
 {
     height: 100vh;
     margin: 0;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 100;
-    font-family: DejaVu Sans Mono, monospace;
+    display: flex;
+    align-items: center;
+
     
 }
 
+
+.jumbotron
+{
+    position: sticky;
+    top: 30px;
+    z-index: 1;
+    background-color:#0275d8;
+}
 h1,h2
 {
     font-family: DejaVu Sans Mono, monospace;
@@ -24,14 +31,6 @@ h1,h2
     
 }
 
-
-
-img
-{
-    max-width: 30vh;
-}
-
-
 body 
 {    
     
@@ -40,7 +39,3 @@ body
    
 }
 
-body
-{
-    overflow:hidden;
-}
