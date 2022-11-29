@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Your Personal CSS BELOW this Line -->
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="about.css">
-    </head>
-    <body>
-        <a href = "home.html">
-            <h1>Garrett Tran</h1>
-        </a>
         <title>About Garrett</title>
+    </head>
+    
+    <body>
+
+        
+        <!-- Bootstrap NavBar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="home.html">
+            <img src="https://lh3.googleusercontent.com/-4TA2eXlXH7Q1v8XAkXt5VVQZppEHEsiFmcBN9sa8Gl-oiBlZnfHo7DJPlb_mLdIwvmTrHRbzDBlMdKDGZAZC-N5_C6pUDDd9MWq_3aeIRxABCEPn5De6hoSP3Laa3nT6voCZ1_NttG8ODsm0P0VEIco2J1dHjbCnP8y5BSmVcVWcL2_elTW5VdvQ6XPzthHVwA_rEVfaacW3t2d_iCbl74S2Fqa99c8uZBRN9USKi_PTu-QyvNoBx9oenqU8K3AFmkUiuVCJFNwdSK3m5ilqArAgEiwJvq0cT9hy6MlKvk2xQIhtCzTUWvR_o3M-14TWGoQyHeqIL3V3QtqrRMUbw9TXpqslSN3FGKI1IowMQGlzqaYFoXbPaAHnDOnLH5DZ0s-8UZg1PWrMl41Ql2jcl-GheHGyi3QgUDvGECM82CIWXzvjZBJRre0WuNzKeqFlVRVCsFyGkhXTdnFFA_EtDtPVWUh4Lhcif6yjgofiXE47gZxBwWq3VojA1ReMVZroZiJMUSZgHkKFJcMdxV_y_84aVbHO6l6950OmUl9NHs4fcjgf1sLZNYr_NkMa735YqFemjnNmevfAPnhv4CXL_6Pl7kTggWFivcsqZ1gURLYO0kPL9RGgMHsX-WntVmIr6PYoaBDNFNki8Od49BKBIsb5IP7RsZtJ45M-60F8P3C0aZg2RNm4YuGp1t5JxUCv6s4DSk5eqfcpYDcydKA0vxbqmhzw0TdzT-xOKUOzLmPYUYPVm_WIGlk3v5FU-vmvbWniumj7Q_P57O-aXNdMvcPUokO7OC8spOobzIPQe7gn0cLrYxgsHCPqurd0XK40LYg7mjoLR1qm2FHVDXrRUWdTX3yIx0cHCo6I_XBwj4qkg57Jx8I0Ec3bBroZ2tmCScOUk4Y9oA3J6yYQ5tsp-gftqydD036PoWh5q4QTFGTvSYzSr0bd5IniCplL0moYMSMgvhPEToQBGAaIhp_ZaAECtwzWRVcJ2MSNniUWYV3eOeqeGKC3rM=w156-h152-no?authuser=0" height="50px">
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          
+            
+        
+
+        <!-- Content Standard: Paragraph centered on the page using container -->
         <div class = "main">
-            <div class = "text">
+          <!-- Bootstrap Container-->
+            <div class = "container">
                 <p class = "center"> My name is Garrett and I am a student at Menlo School in Atherton, CA. I’ve played baseball since I was 4 years old and am a part of both my high school team and Brushback Baseball Club. I am an Eagle Scout in Troop 30 based in Los Altos. My primary academic interests are centered around the fields of statistics, data science, and economics.</p>
+                
             </div>
         </div>
+
+        <div class="fact">
+          <!-- Bootstrap Collpase-->
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Fun Fact About Me
+                </button>
+            </p>
+              <div style="min-height: 120px;">
+                <div class="collapse width" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 320px;">
+                    I have over 1800 hours on an online game called CS:GO.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        
+          <!-- Bootstrap Carousel -->
+          
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://lh3.googleusercontent.com/wN-iG2e1izMZFw85Ch_GGyWCqY-MBtjs7HPJOnuL-zvS8RHOr5yCVvDe4cP8nejfKqipfhVaoQElDl5oBjL1vbv4hnYFE-HPls1EKqo0fYhAIQ2qRnrRAJ7TJeaABGx2wyErFjSYY0F-BrXJisB8-KJvUVSoZKGgvGpjJIRTLN3M5S1sr1qHPf1hAAVvQvuotKvK5XJYjFzGB0B8-GoGNCygMUJ0--ZBTwpx4tDyQpdpKE_6bd_iCd-9p_sfCpAjyPAguY8cK_XA8CflFJb50rKHM1w9zXb5wC9tbdqulanjSzsoWBIk99YY_IsGHh_gZpgTmIqMsgllnOpGrLeyMagRiZAssXDC2ukNqC9_1a5-kC85d79aPbBSU4G7fdNAmNx2TJDTwN0-aTIgzvLNhmAVoSS5xhkOadzodEgRdgjaX6eUpuy6l5KNMhGUSVVkEUb3uFoi2ePfNuMiZ8z4p8s1ykEdhvI3NmAewiPf_tWmfUKrLsr8_aOS__w5HNbso6wFpmdeDz31kZ1d0B8LvKwKW2gAh6nKq9Zc6AkzXqi0duCfqPDX_Crun9-59q28XGbjY5-zY8DMTbdEbafHBX0U-vHavNpISrhRiT40tRBl1EUzfYcoTeC6zxAdiKf__j_AiiTNn04LARBbNsrroZM31zbtzSz9rPvE2N6pGgnNH3sqVMMm4Ty-aJhObGSUEDHl4aTSFwTdTJrqA05XYD-yevI9-21lR1aecTqQnqEDD9fKcyzho_otV0ZQ4CMfAwvVIk8ZXivZio6BTOWv9sKAutMWQ1HZnTYNHOqAYhkUOVOWCk_pddLkXmbOXG7lx_uOX_gXX18RT74w-UuRZXvThvkK62IURV0vpQdOzejDLbfvaAA5q4YR2V8tS-MdtepfIu650n0q3pANOVprHsGr5e9VJfDC2PDftV1PCyspZUdC3E_5Set7_yJEh4Qs1xvijQ5MthhFlmlV3mRiIXHe-iIH_ajo_gAmR6U4ioC99ATy=w1428-h954-no?authuser=0" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lh3.googleusercontent.com/oBXdNt3m8y_EU48YVeWj8Qgn2RzTcHbmiRjzUlZnCRrEbmcoGtAgBBIMesPB1mxc4w6Mqs-dH5rEOhF6djdECT8SAbU6iUh9e-8RZuXq4Zj-dKajeY10qHhAF8DO1t9qi1UbsKS0UWQFKbQI46S4s5G9R70MDUWi_8lJ8fghEfmctFRM3pXJ2bEB_pcmXffy4MYHwOkWTteDYQFXAUVnigBUp8YjMCF7839gUWs-Gy2wF1XXM055e1XBkcbVzz5-2ilD8dzMewOCb63fPyu3EnpN9GKBku23nrSIgQJg-rK5RHZrctJOoN-hOM1CV5D3BHdORtxhyYkCEqg0Z3slMYeWOrzAIj3Jw5HYf3-69rtx_bPdfW_QJQxHPVAMOwEv5qitN8nR1pWLc2j-QGxpuQT8-bvj4RTClR8xVuVAOB-YGUE6ykNgcUDWC_Ds4cUxAlTtAuxTT8i5na8O5rB2ittx5MX8hxxPAFe3GdoMRooXnD8HIu2x8WQiURsZuBBN2b4ySVMpLy-n2IxWZn762neVrbqzgYwi7vKU74engaLwp1NNFyoqi3155lDJ6QLlwybzjW_EjVUGhR9uwmTkYMz0UZZU8l0Xv7H24VC1d5HPH4qzYni5QESJEucp5X0I1-tFr-zMvVC1mlvWrOgqtr2QoaxJ_bVsKTEeMs8_tiz9DNf0yh51jVs0cmVE9F5g3sgFe1fH4I1lwVG7EwQkkrzf4t3Ul6Dgqw7NvhImFK5G7y_f5fGmXCKRSch3goQwxxMCMuQ0U5bah5OSP4VPFfPLzpOidR8ij29IU9BYqGn930gTZ5OpldIRrmpdpEySyql7KTElbStBtt1sexCwJi7_EToS624njaX-bIk9ZdwLFqU80m17AcbrN6IeD8GGlFzyKPWhK28WymB3mt5_hocgtC6FPZ9ZFPqdLylcMikHjMrFS7ZBByDy6b4oAIFmJcMh6Pr_BDUymjX-V3kGKckMg9O8aklA6Pj5_Cqg4UDNdHhn-zq3MZY=w2294-h1528-no?authuser=0" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lh3.googleusercontent.com/kx8qYm616wjEqnmdjQgl_EX_tmRiOHVT0ydo5yHdbj51uRElsc3ti6SRDSMp51aweY5jMI42lK5UrzTN13bq02oDS_0M5F3XqgtsBKBjz87gfl-DRwmbF36gDva1ucFLQURXDu4nlA-KIjcmkOluCXiPsXyeKYj7fwXM-6DBN4wVUAAvGnWcdJOs8c34UW7RmQS8booYhGhMg25BMAoQ7oPyB1Rbqd8EwG3Pas_EW7L8yuvJWRSlNG1-p76s1FfAJM05BR0U8m1q6PicP-pS25Jb_IC6aB_0ziXBHUZpkJdYyn2sErY21gNpTqcy42dRtGnIfOAaE8JeaZShO0Yf7Jj_0evQgoojHjFBZQBoJMWogOK5v4tUWvAXZ8uIOkJI3F_D8wgOIMCLxSuJxKK8v4UF09SoA1A3tl_5lh-qZxklVgkUG8cVjJBjcMRBs3GsvcaK3_qfgLC1t8yf5z9r5DFTsPAAZmnhNneMRjsY1Ol6yaJMp6StUx8A4y7gGXFwLDJAkGhZeRFUJrPQ8Mr9nWat6Bpv5qVkGfUkQmmTNcrHVKdHI79wdtMX2KgygLgZWXtewuNJWxIIKoc4YHZVzD-izzKFxWJK12YISDKrYyapGRR1oyYG3SIRyZFM9haleojKwbssxqjtRTdP3hnYwIkwBRAyLFeKw6VRZhXhnNOC0TKxalxyplgHv4jxXytZ2JKwPlPDQaBrEewqsdDUHdowz2RBsGBqRNDq6NN4GGFEpOLzamTlZ87clqtIo2BuYotx4ZMJ2cOPRL39WgtF82cXy_y6an0au_qu8q5E86uIhG8LLptuKvFPsQgs7XS4ZWbQg--oRC-KWzpf-oKyu6tF89M4lcJhHiSbeYOkxCLOKotazhZ3cjKsfWwtkt_hXJ9EWd6uce3LofGBtg2cHtc2ZHLUBVYdeEYX9ppEHgjp99-Dr-AVRvtNDWytVHuc7BD3UDRHQvvOLvluzuXiKPoe2Ixjj0rA-9UA21MnAH7N5eYpSvnWPto=w2360-h1528-no?authuser=0" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          
+
+          
+
+        
+
+
+        <!-- Your Content ABOVE this Line -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
