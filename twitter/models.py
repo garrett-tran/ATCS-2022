@@ -39,7 +39,6 @@ class Follower(Base):
     following_id = Column('following_id', INTEGER, ForeignKey('users.username'))
 
 class Tweet(Base):
-    # TODO: Complete the class
     __tablename__ = "tweets"
     id = Column("id", INTEGER, primary_key=True)
     content = Column("content", TEXT, nullable = False)
@@ -55,7 +54,6 @@ class Tweet(Base):
         
 
 class Tag(Base):
-    # TODO: Complete the class
     __tablename__ = "tags"
     id = Column("id", INTEGER, primary_key=True)
     content = Column("content", TEXT, nullable = False)
@@ -66,8 +64,8 @@ class Tag(Base):
         return self.content
 
 class TweetTag(Base):
-    # TODO: Complete the class
     __tablename__ = "tweettags"
     id = Column("id", INTEGER, primary_key=True)
     tag_id = Column("tag_id", INTEGER, ForeignKey('tags.id'))
     tweet_id = Column("tweet_id", INTEGER, ForeignKey('tweets.id'))
+
