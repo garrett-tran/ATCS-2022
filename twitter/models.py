@@ -25,11 +25,9 @@ class User(Base):
                              primaryjoin="User.username==Follower.following_id",
                              secondaryjoin="User.username==Follower.follower_id",
                              overlaps="following")
-    tweets = relationship("Tweet", back_populates="user")
-    
-    def __init__(self, username, password):
-        self.username = username
-        self.password = password
+
+    def __repr__(self):
+        return "@" + self.username
 
 
 class Follower(Base):
@@ -37,49 +35,39 @@ class Follower(Base):
 
     # Columns
     id = Column("id", INTEGER, primary_key=True)
-    follower_id = Column('follower_id', TEXT, ForeignKey('users.username'))
-    following_id = Column('following_id', TEXT, ForeignKey('users.username'))
-
-    def __init__(self, id, follower_id, following_id):
-        self.id = id
-        self.follower_id = follower_id
-        self.following_id = following_id
+    follower_id = Column('follower_id', INTEGER, ForeignKey('users.username'))
+    following_id = Column('following_id', INTEGER, ForeignKey('users.username'))
 
 class Tweet(Base):
+    # TODO: Complete the class
     __tablename__ = "tweets"
-
-
     id = Column("id", INTEGER, primary_key=True)
-    content = Column('content', TEXT, nullable=False)
-    timestamp = Column('timestamp', TEXT, nullable=False)
-    username = Column('username',TEXT, ForeignKey('users.username'))
+    content = Column("content", TEXT, nullable = False)
+    username = Column("username", TEXT, ForeignKey("users.username"))
+    timestamp = Column("timestamp", TEXT, nullable = False)
+    tags = relationship("Tag", secondary = "tweettags", back_populates = "tweets")
+    def __repr__(self):
+        tags = ""
+        for tag in self.tags:
+            tags += str(tag) + " "
+        return "@" + self.username + "\n" + self.content + "\n" + self.timestamp + "\n" + tags
 
-    def __init__(self, id, content, timestamp, username):
-        self.id = id
-        self.content = content
-        self.timestamp = timestamp
-        self.username = username
-
-    user = relationship("User", back_populates="tweet")
+        
 
 class Tag(Base):
+    # TODO: Complete the class
     __tablename__ = "tags"
-
     id = Column("id", INTEGER, primary_key=True)
-    content = Column('content', TEXT, nullable=False)
-    
-    def __init__(self, id, content):
-        self.id = id
+    content = Column("content", TEXT, nullable = False)
+    tweets = relationship("Tweet", secondary = "tweettags", back_populates = "tags")
+    def __init__(self, content):
         self.content = content
+    def __repr__(self):
+        return self.content
 
 class TweetTag(Base):
+    # TODO: Complete the class
     __tablename__ = "tweettags"
-
     id = Column("id", INTEGER, primary_key=True)
-    tweet_id = ("tweet_id", INTEGER, ForeignKey('tweets.id'))
-    tag_id = ("tag_id", INTEGER, ForeignKey('tags.id'))
-
-    def __init__(self, id, tweet_id, tag_id):
-        self.id = id
-        self.tweet_id = tweet_id
-        self.tag_id = tag_id
+    tag_id = Column("tag_id", INTEGER, ForeignKey('tags.id'))
+    tweet_id = Column("tweet_id", INTEGER, ForeignKey('tweets.id'))
